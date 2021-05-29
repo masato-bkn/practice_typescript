@@ -21,3 +21,15 @@ hash['a'] = 'a'
 hash[1] = 'a'
 // hash['a'] = 1
 console.log(hash)
+
+
+// Type Aliases
+type Sample = {
+    hoge: string;
+    x: number;
+}
+
+let sample : Sample = {
+    hoge: "hoge",
+    x: 5
+}
