@@ -54,3 +54,15 @@ dummyFetch2("/success/data").then(
         console.log(error)
     },
 );
+
+
+const promises = [
+    Promise.resolve(1),
+    Promise.resolve(2),
+]
+
+Promise.all(promises).then(
+    (promises) => {
+         promises.forEach = async (num) => { await console.log(num);}
+    }
+);
