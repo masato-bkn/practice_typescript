@@ -33,3 +33,12 @@ let sample : Sample = {
     hoge: "hoge",
     x: 5
 }
+
+const include = (array: (string|number)[], search: string|number) : boolean => {
+    array = array.filter(value => value == search)
+
+    return array.length === 0
+}
+
+console.log(include([1,2,3], 2));
+console.log(include([1,2,3], 4));
